@@ -2,8 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/ggsipu-academics.svg)](https://pypi.org/project/ggsipu-academics/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/ggsipu-academics.svg)](https://pypi.org/project/ggsipu-academics/)
-[![License](https://img.shields.io/github/license/MayankNCodes/ggsipu_academics.svg)](https://github.com/<your-username>/ggsipu_academics/blob/main/LICENSE)
-[![Downloads](https://static.pepy.tech/badge/ggsipu-academics)](https://pepy.tech/project/ggsipu-academics)
+[![License](https://img.shields.io/github/license/MayankNCodes/ggsipu_academics.svg)](https://github.com/MayankNCodes/ggsipu_academics/blob/main/LICENSE)
 -----
 
 ## Table of Contents
@@ -57,9 +56,9 @@ Calculate the SGPA from marks.
 ```ValueError```: If the total credits are zero.
 
 ### Example:
-    >>> from ggsipu_academics import Calculate
+    >>> from ggsipu_academics import SGPAFromMarks
     >>> subjects = [(4, 80), (4, 70), (3, 90)]
-    >>> Calculate.SGPAFromMarks(subjects)
+    >>> SGPAFromMarks(subjects)
     7.8
 
 ## SGPAFromGradePoint
@@ -78,9 +77,9 @@ Calculate the SGPA from grade points.
 
 ### Example:
 ```python
-    >>> from ggsipu_academics import Calculate
+    >>> from ggsipu_academics import SGPAFromGradePoint
     >>> subjects = [(4, 8.5), (4, 7.5), (3, 9.0)]
-    >>> Calculate.SGPAFromGradePoint(subjects)
+    >>> SGPAFromGradePoint(subjects)
     8.33
 ```
 
@@ -104,9 +103,9 @@ Calculate the CGPA from semester marks.
 
 ### Example:
 ```python
-    >>> from ggsipu_academics import Calculate
+    >>> from ggsipu_academics import CGPAFromSemesterMarks
     >>> semesters = [[(4, 80), (4, 70), (3, 90)], [(4, 85), (4, 75), (3, 95)]]
-    >>> Calculate.CGPAFromSemesterMarks(semesters)
+    >>> CGPAFromSemesterMarks(semesters)
     8.42
 ```
 
@@ -126,23 +125,23 @@ Calculate the CGPA from semester GPAs.
 
 #### Example:
 ```python
-    >>> from ggsipu_academics import Calculate
+    >>> from ggsipu_academics import CGPAFromSemesterSGPA
     >>> semesters = [7.8, 8.42]
-    >>> Calculate.CGPAFromSemesterSGPA(semesters)
+    >>> CGPAFromSemesterSGPA(semesters)
     8.1
 ```
 
 ## Example
 
 ```python
-from ggsipu_academics import Calculate
+from ggsipu_academics import Grade, GradePoint, SGPAFromMarks, SGPAFromGradePoint, CGPAFromSemesterMarks, CGPAFromSemesterSGPA,
 
-print("Grade:", Calculate.Grade(85, roundPrecision=3)) # Output: Grade: A
-print("Grade Point:", Calculate.GradePoint(85, roundPrecision=3)) # Output: Grade Point: 8.0
-print("SGPA From Marks:", Calculate.SGPAFromMarks([(4, 85), (4, 75)], roundPrecision=3)) # Output: SGPA From Marks: 7.50
-print("SGPA From Grade Point:", Calculate.SGPAFromGradePoint([(4, 7), (4, 8)], roundPrecision=3)) # Output: SGPA From Grade Point: 7.75
-print("CGPA From Semester Marks:", Calculate.CGPAFromSemesterMarks([[(4, 7), (4, 8)], [(4, 8), (4, 9)]], roundPrecision=3)) # Output: CGPA From Semester Marks: 8.33
-print("CGPA From Semester SGPA:", Calculate.CGPAFromSemesterSGPA([7.75, 8.5, 9.0], roundPrecision=3)) # Output: CGPA From Semester SGPA: 8.58
+print("Grade:", Grade(85, roundPrecision=3)) # Output: Grade: A
+print("Grade Point:", GradePoint(85, roundPrecision=3)) # Output: Grade Point: 8.0
+print("SGPA From Marks:", SGPAFromMarks([(4, 85), (4, 75)], roundPrecision=3)) # Output: SGPA From Marks: 7.50
+print("SGPA From Grade Point:", SGPAFromGradePoint([(4, 7), (4, 8)], roundPrecision=3)) # Output: SGPA From Grade Point: 7.75
+print("CGPA From Semester Marks:", CGPAFromSemesterMarks([[(4, 7), (4, 8)], [(4, 8), (4, 9)]], roundPrecision=3)) # Output: CGPA From Semester Marks: 8.33
+print("CGPA From Semester SGPA:", CGPAFromSemesterSGPA([7.75, 8.5, 9.0], roundPrecision=3)) # Output: CGPA From Semester SGPA: 8.58
 ```
 
 
