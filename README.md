@@ -56,10 +56,12 @@ Calculate the SGPA from marks.
 ```ValueError```: If the total credits are zero.
 
 ### Example:
-    >>> from ggsipu_academics import SGPAFromMarks
-    >>> subjects = [(4, 80), (4, 70), (3, 90)]
-    >>> SGPAFromMarks(subjects)
-    7.8
+```python
+>>> from ggsipu_academics import SGPAFromMarks
+>>> subjects = [(4, 80), (4, 70), (3, 90)]
+>>> SGPAFromMarks(subjects)
+7.8
+```
 
 ## SGPAFromGradePoint
 
@@ -148,3 +150,4 @@ print("CGPA From Semester SGPA:", CGPAFromSemesterSGPA([7.75, 8.5, 9.0], roundPr
 ## License
 
 `ggsipu-academics` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
