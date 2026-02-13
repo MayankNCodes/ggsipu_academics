@@ -2,6 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/ggsipu-academics.svg)](https://pypi.org/project/ggsipu-academics/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/ggsipu-academics.svg)](https://pypi.org/project/ggsipu-academics/)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/ggsipu-academics?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/ggsipu-academics)
 [![License](https://img.shields.io/github/license/MayankNCodes/ggsipu_academics.svg)](https://github.com/MayankNCodes/ggsipu_academics/blob/main/LICENSE)
 -----
 
@@ -150,5 +151,6 @@ print("CGPA From Semester SGPA:", CGPAFromSemesterSGPA([7.75, 8.5, 9.0], roundPr
 ## License
 
 `ggsipu-academics` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
 
 
